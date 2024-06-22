@@ -1,20 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+*::selection {
+    background-color: #8460f6;
+    color: #fff;
+}
+body {
     font-family: "Poppins", sans-serif;
     color: #777;
-    height: 3000px;
 
 }
-nav .container{
+
+nav .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.container{
+
+.container {
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -23,44 +28,51 @@ nav .container{
 }
 
 /* start nav */
-nav{
+nav {
     position: fixed;
     width: 100%;
     z-index: 1;
 }
-nav .logo{
+
+nav .logo {
     width: 60%;
 }
-nav .logo img{
+
+nav .logo img {
     padding: 8px;
 }
-nav .list{
+
+nav .list {
     width: 20%;
 }
-nav .list ul{
+
+nav .list ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
 }
 
-nav .list ul li a{
+nav .list ul li a {
     text-decoration: none;
     color: aliceblue;
     padding: 8px;
 }
-nav .list ul li a:hover{
+
+nav .list ul li a:hover {
     color: #f3487f;
 }
+
 /* end nav */
 
 /* start header */
-header{
+header {
     background: url(images/banner-bg.jpg) no-repeat center center/cover;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
-.overlay-bg{
+
+.overlay-bg {
     background-color: rgba(132, 96, 246, 0.8);
     width: 100%;
     height: 100%;
@@ -68,30 +80,33 @@ header{
     top: 0;
     left: 0;
 }
-header .header-info{
+
+header .header-info {
     position: absolute;
-    top:30%;
+    top: 30%;
     left: 25%;
     width: 50%;
     text-align: center;
     z-index: 2;
     color: #fff;
-
 }
-header .header-info h4{
+
+header .header-info h4 {
     font-size: 40px;
     font-weight: 100;
     margin-bottom: 20px;
     line-height: 1.2em;
     width: 100%;
 }
-header .header-info p{
+
+header .header-info p {
     margin-bottom: 60px;
     font-weight: 300;
     line-height: 1.5em;
     font-size: 1em;
 }
-header .header-info .btn{
+
+.btn {
     color: white;
     background: transparent;
     border: 1px solid white;
@@ -103,45 +118,226 @@ header .header-info .btn{
     font-weight: bold;
     transition: all 0.5s;
 }
-header .header-info .btn i{
+
+.btn i {
     transition: 0.5s;
 }
-header .header-info .btn:hover{
+
+.btn:hover {
     padding: 12px 49px 12px 49px;
 }
-header .header-info .btn:hover i{
-    padding-left: 10px;
 
+ .btn:hover i {
+    padding-left: 10px;
 }
 /* end header */
+
+
 /* start history */
-.History{
-    background-color: #f2f5f7;
+.History .container{
+    width: 90%;
 }
-.heading{
+.History {
+    background-color: #f2f5f7;
+    padding: 70px 0;
+}
+.History  .history-desc {
+    background-color: #fff;
+    width: 100%;
+    height: 467px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.History .history-img{
+    width: 33.333%;
+    position: relative;
+}
+.History .history-img img{
+position: absolute;
+top:-20px;
+left: -20px;
+}
+.History .history-info{
+    width: 45%;
+}
+.heading {
     padding: 70px;
     text-align: center;
-} 
-.heading h3{
-    font-size: 30px;
+}
+
+.heading h3 {
+    font-size: 49px;
     line-height: 1.5em;
     font-weight: 500;
     line-height: 1.9em;
     color: black;
-
 }
-.heading p{
+
+.heading p {
     width: 50%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 70px;
     font-weight: 300;
     line-height: 1.5em;
-    padding-bottom: 70px;
 }
 
-.history-desc{
-    background-color: #fff;
-    width: 90%;
-    height: 50vh;
-    margin: auto;
+.list-btn .btn{
+    color: #777;
+    border: 1px solid #777;
+    padding: 5px 15px 5px 15px;
+    transition: 0.5s;
+    margin: 30px 0 ;
+}
+.list-btn .btn:hover{
+    color:white;
+    background-color: rgba(132, 96, 246);
+}
+.history-info h3{
+    color: black;
+    margin-bottom:10px;
 }
 /* end history */
+
+/* start skills */
+.skills .container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.skills{
+    background-color: #f3487f;
+    height: 600px;
+}
+.skills-info-container-one{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+}
+.skills-info-container-one .skills-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    color: #f3487f;
+    background-color: #fff;
+    font-size: 36px;
+}
+.skills-info-container-two .skills-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    color: #f3487f;
+    background-color: #fff;
+    font-size: 36px;
+}
+.skills-info-container-one .skills-info-grey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    background-color: #6f7598;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.skills-info-container-two .skills-info-grey{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    background-color: #6f7598;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.skills-info-container-two{
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    display: flex;
+    height: 300px;
+}
+.skills-icon p{
+    font-size: 20px;
+}
+.skills-info{
+    transition: 0.5s;
+}
+.skills-info:hover{
+    background-color: #f3487f;
+    color: #f2f5f7;
+}
+.skills-info-grey:hover .skills-info{
+    background-color: #f3487f;
+    color: #f2f5f7;
+}
+
+/* end skills */
+
+/* start Beautiful Experiences */
+.beautiful{
+    height: 80vh;
+}
+.beautiful .container{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.beautiful .container .beau-img img{
+    width: 47%;
+}
+.beautiful .container .beau-img{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    overflow: hidden;
+}
+.beautiful .container .beu-disc{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    overflow: hidden;
+}
+.beautiful .container .beu-disc h2{
+    color: black;
+    font-size: 30px;
+}
+.beautiful .container .beu-disc h4{
+    color: black;
+    margin-top: 10px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.beautiful .container .beu-disc h5{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 1.9rem;
+}
+.beautiful .container .beu-disc .btn{
+    background-color: #fff;
+    color:#8460f6;
+    border: 1px solid #6f7598;
+    max-width: fit-content;
+}
+.beautiful .container .beu-disc .btn:hover{
+    background-color: #8460f6;
+    color:white;
+}
+/* end Beautiful Experiences */
+
+
