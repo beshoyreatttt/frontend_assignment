@@ -7,12 +7,19 @@ body{
     font-family: "Poppins", sans-serif;
     color: #777;
     height: 3000px;
+
 }
-.container{
+nav .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
 }
 
 /* start nav */
@@ -107,4 +114,34 @@ header .header-info .btn:hover i{
 
 }
 /* end header */
+/* start history */
+.History{
+    background-color: #f2f5f7;
+}
+.heading{
+    padding: 70px;
+    text-align: center;
+} 
+.heading h3{
+    font-size: 30px;
+    line-height: 1.5em;
+    font-weight: 500;
+    line-height: 1.9em;
+    color: black;
 
+}
+.heading p{
+    width: 50%;
+    margin: auto;
+    font-weight: 300;
+    line-height: 1.5em;
+    padding-bottom: 70px;
+}
+
+.history-desc{
+    background-color: #fff;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+}
+/* end history */
