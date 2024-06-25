@@ -287,15 +287,13 @@ left: -20px;
 }
 
 /* end skills */
-
 /* start Beautiful Experiences */
-.beautiful{
-    height: 80vh;
-}
+
 .beautiful .container{
     width: 90%;
     display: flex;
     justify-content: space-evenly;
+
 }
 .beautiful .container .beau-img img{
     width: 47%;
@@ -340,4 +338,170 @@ left: -20px;
 }
 /* end Beautiful Experiences */
 
+/* start some projects*/
+.projects{
+background-color: #5dd1e3;
+padding: 70px 0;
+margin-top: 100px;
+}
+.projects .heading h3 ,.projects .heading p{
+    color: #fff;
+}
+.projects .container{
+    width: 90%;
+}
+.projects .some-project{
+    overflow: auto;
+    background-color: #fff;
+    height: 289px;
+    overflow-y: hidden;
+}
+.projects .some-project .some-info{
+    float:left;
+    width:66.666%;
+}
+.projects .some-project .some-info img{
+    width:93%;
+    height: 289px;
+}
+.projects .some-project .some-desc{
+    float: left;
+    width: 33.333%;
+}
+.projects .some-project .some-desc .project-details{
+    padding: 50px 50px 50px 0;
+}
+.projects .some-project .some-desc .project-details h3{
+    margin-bottom: 10px;
+}
+.projects .some-project .some-desc .project-details p{
+    margin: 5px;
+}
+/* end some projects*/
 
+/* start keep */
+.keep{
+    padding: 100px 0;
+}
+.keep .container{
+    width: 90%;
+}
+.keep form {
+    overflow: auto;
+    width: 70%;
+    margin: auto;
+}
+.keep form input {
+    float: left;
+    width: 45.5%;
+    height: 41px;
+    margin-right:21px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border: 1px solid #d4d5e0;
+}
+.keep form textarea {
+    width: 93%;
+    height: 179px;
+    border: 1.7px solid #d4d5e0;
+    padding: 20px;
+}
+.keep form input::placeholder{
+    color: #777;
+    font-size: 16px;
+}
+.keep form textarea::placeholder{
+    color: #777;
+    font-size: 17px;
+}
+.keep form .btn{
+    color:#8460f6;
+    border: 1px solid #d4d5e0;
+    float: right;
+    margin-top: 10px;
+    margin-right: 70px;
+    letter-spacing: 0;
+}
+.keep form .btn:hover{
+    background-color: #8460f6;
+    color: #fff;
+}
+/* end keep */
+
+/* start together */
+.together{
+    background-color:#f9c400 ;
+    padding: 100px 0;
+}
+.together .together-inp{
+    width:50% ;
+    margin: auto;
+    text-align: center;
+}
+.together .together-inp h3{
+    color:#fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+.together .together-inp form{
+    position: relative;
+}
+.together .together-inp form input{
+    padding: 16px 35px;
+    width: 100%;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+}
+.together-inp form .btn1{
+    padding: 10px 23px;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    background-color: transparent;
+    color:#8460f6;
+    padding: 12px 45px 12px 45px;
+    cursor: pointer;
+    text-transform: capitalize;
+    border-radius: 20px;
+    line-height: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    border: 1px solid #eee;
+}
+.together-inp form .btn1:hover{
+    background-color: #8460f6;
+    color: #fff;
+}
+.together-inp form .btn1::placeholder{
+    color: #d4d5e0;
+    font-size: 17px;
+}
+/* end together */
+
+/* start footer */
+footer{
+    background-color: #4e5375;
+    padding: 100px 0;
+    overflow: auto;
+}
+footer .footer-list{
+    float: left;
+    width: 25%;
+}
+footer .footer-list .list h3{
+color: #fff;
+margin-bottom: 10px;
+}
+footer .footer-list .list ul{
+    list-style: none;
+
+}
+footer .footer-list .list ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/* end footer */
