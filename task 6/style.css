@@ -492,9 +492,10 @@ footer .footer-list{
     float: left;
     width: 25%;
 }
-footer .footer-list .list h3{
+footer .footer-list .list h6{
 color: #fff;
 margin-bottom: 10px;
+font-size: 16px;
 }
 footer .footer-list .list ul{
     list-style: none;
@@ -503,5 +504,19 @@ footer .footer-list .list ul{
 footer .footer-list .list ul li a{
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+footer .footer-list .list ul li a:hover{
+    color: #8460f6;
+}
+
+footer .footer-list .list .footer-img{
+    float: left;
+    width: 22%;
+}
+footer .container{
+    width: 90%;
 }
 /* end footer */
