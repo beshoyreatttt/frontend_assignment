@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+=================================
+public style
+==================================
+
+*/
+
+* ,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f7f7f7ff;
+}
+
+:root{
+  --first-color :#ff003c; 
+  --second-color:#141517;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+
+
+/*   <!-- 
+  ===================
+    Navbar
+  ===================
+  -->
+ */
+
+
+nav{
+background-color: #ffffff;
+width: 100%;
+padding: 28px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav .brand{
+  width: 25%;
+}
+
+
+nav .list{
+width: 50%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav .list .item a{
+  font-size: 17px;
+  text-transform: capitalize;
+  color: var(--second-color);
+  font-weight: 500;
+}
+nav .list .item{
+  position: relative;
+padding: 13px 0 0;
+}
+nav .list .item:nth-child(4)::after{
+  content: 'Hot';
+  position: absolute;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 3px 8px;
+  font-size: 13px;
+  border-radius: 8px;
+  top: -24px;
+  filter: drop-shadow(1px 1px 4px rgb(184, 177, 177));
+}
+nav .icon{
+  width: 25%;
+  text-align: right;
+}
+nav .list .item .dropdown{
+  position: absolute;
+  background-color: #fff;
+  filter: drop-shadow(2px 4px 6px #ccc);
+  width: 180px;
+  top:54px;
+  padding: 21px;
+  border-top:3px solid #ff003c ;
+  border-radius: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
+}
+nav .list .item:hover .dropdown{
+  opacity: 1;
+  visibility: visible;
+  top: 47px;
+}
+nav .list .item .dropdown::before{
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-top:10px solid transparent;
+  border-bottom:10px solid #f00;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+}
+nav .list .item .dropdown .drop{
+  margin-bottom: 10px;
+}
+nav .icon a{
+  margin-right: 13px;
+  color: var(--second-color);
+  font-weight: 400;
+  font-size: 17px;
+}
+
+nav label ,input{
+  display: none;
+}
+
+
+/* <!-- 
+===================
+  End Navbar
+===================
+--> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================== media query ================ */
+
+@media (max-width:1119px){
+
+}
+@media (max-width: 991px) {
+  /* ===== start Navbar ========*/
+  nav .brand{
+    width: 30%;
+  }
+  nav input{
+    visibility: hidden;
+  }
+  nav .brand img{
+    width: 100%;
+  }
+  nav label ,input{
+    display: block;
+  }
+  nav .list{
+    display: unset;
+    position: absolute;
+    top: 80px;
+    width: 90%;
+    left: 5%;
+    background-color: #ccc;
+    padding: 20px 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all ease-in;
+  }
+  nav #inp:checked ~ .list{
+    opacity: 1;
+    visibility: visible;
+  }
+  nav .icon a{
+    margin-right: 1px;
+  }
+  nav label{
+    order: 2;
+  }
+  nav .list .item:nth-child(4)::after {
+    display: none;
+  }
+
+  nav .list .item .dropdown {
+    position: unset;
+    background-color: transparent;
+    filter: 0;
+    padding: 7px 7px 0;
+    border-top: 0;
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+  nav .list .item .dropdown::before{
+    display: none;
+  }
+  nav .list .item:hover .dropdown{
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  
+}
+@media (max-width: 575px) {
+  
+}
