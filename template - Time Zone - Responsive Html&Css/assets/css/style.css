@@ -30,6 +30,42 @@ ul{
 }
 
 
+.container{
+  width: 85%;
+  margin: auto;
+}
+.row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.btn{
+  background-color:#4a4a4b ;
+  color: #fff;
+  border: 0;
+  padding: 18px 25px;
+  margin-bottom:15px;
+  font-size: 17px;
+  letter-spacing: 1.2;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--first-color);
+  z-index: -1;
+  transition: all 0.4s ease-in;
+}
+.btn:hover::before{
+  width: 100%;
+}
 
 /*   <!-- 
   ===================
@@ -137,6 +173,74 @@ nav label ,input{
 
 
 
+/*     <!-- 
+  ===================
+    Start Header
+  ===================
+  --> */
+
+header{
+  background-color: #f0f0f2;
+}
+
+header .content{
+  align-self: center;
+  animation: contentLeft 0.8s ;
+}
+
+@keyframes contentLeft {
+  0%{
+    transform: translateX(-110%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+header .content h1{
+  font-size: 70px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  font-weight: 700;
+
+}
+
+header .content p{
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 35px;
+  color: var(--second-color);
+}
+header .img-head{
+  overflow: hidden;
+  justify-self: flex-start;
+}
+header .img-head img{
+  width: 67% ;
+  animation: imgScale 3s alternate infinite;
+}
+@keyframes imgScale {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+/*     <!-- 
+  ===================
+    End Header
+  ===================
+  --> */
+
+
+
+
+
+
+
+
 
 
 
@@ -218,10 +322,42 @@ nav label ,input{
   nav .list .item:hover .dropdown{
     display: block;
   }
+
+  /*  ===== End Navbar ======== */
+
+
+
 }
 @media (max-width: 767px) {
-  
+    /*  ===== Start Header ======== */
+  header .content{
+    width: 60%;
+    font-size: 30px;
+  }
+  header .img-head {
+    width: 30%;
+  }
+    /*  ===== Start Header ======== */
+
 }
 @media (max-width: 575px) {
-  
+  /*  ===== Start Header ======== */
+  header{
+    padding: 45px 0;
+  }
+  header .img-head {
+    display: none;
+    visibility: hidden;
+  }
+  header .content h1{
+    font-size: 35px;
+    padding: 13px;
+    margin: 7px;
+  }
+  header .content p{
+    font-size: 15px;
+    padding: 7px;
+    margin-bottom: 7px;
+  }
+  /*  ===== End Header ======== */
 }
