@@ -325,17 +325,37 @@ header .img-head img{
 
   /*  ===== End Navbar ======== */
 
-
+/*  ===== Start Header ======== */
+header .content{
+  width: 66%;
+}
+header .content h1{
+  margin-top: 20px;
+  font-size: 37px;
+}
+header .img-head img{
+  width: 100%;
+}
+header .img-head {
+  width: 25%;
+}
+  /*  ===== Start Header ======== */
 
 }
 @media (max-width: 767px) {
     /*  ===== Start Header ======== */
   header .content{
-    width: 60%;
-    font-size: 30px;
+    width: 66%;
+  }
+  header .content h1{
+    margin-top: 20px;
+    font-size: 37px;
+  }
+  header .img-head img{
+    width: 100%;
   }
   header .img-head {
-    width: 30%;
+    width: 25%;
   }
     /*  ===== Start Header ======== */
 
