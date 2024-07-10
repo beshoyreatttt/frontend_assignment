@@ -101,6 +101,9 @@ nav .list .item a{
   color: var(--second-color);
   font-weight: 500;
 }
+nav .list .item a:hover{
+  color: var(--first-color);
+}
 nav .list .item{
   position: relative;
 padding: 13px 0 0;
@@ -235,18 +238,66 @@ header .img-head img{
   --> */
 
 
+/* 
+  <!-- 
+  =============================
+    start New Products
+  =============================
+  --> */
+.new-product{
+  padding: 130px 0;
+}
+.new-product .row{
+  display: flex;
+  justify-content: space-between;
+}
+.new-product .title{
+  margin-bottom: 40px;
+}
 
+.new-product .title h2{
+  font-size: 41px;
+}
 
+.new-product .product{
+  width: 29%;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  margin-bottom: 10px;
+}
+.new-product .product .img-product{
+  overflow: hidden;
+}
+.new-product .product .img-product img{
+  width: 100%;
+  transition: all 1s;
+}
+.new-product .product:hover .img-product img{
+  transform: scale(1.1);
 
+}
 
+.new-product .product .contect-product{
+  padding-top:13px ;
+}
 
+.new-product .product .contect-product a{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--second-color);
+}
+.new-product .product .contect-product p{
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--first-color);
+  padding-bottom:20px;
+}
 
-
-
-
-
-
-
+/*         <!-- 
+  =============================
+    end New Products
+  =============================
+  --> */
 
 
 
@@ -380,4 +431,18 @@ header .img-head {
     margin-bottom: 7px;
   }
   /*  ===== End Header ======== */
+
+
+      /*  ===== start new product ======== */
+.new-product{
+    padding: 50px 0;
+}
+.new-product .row{
+  flex-wrap: wrap;
+}
+.new-product .product{
+  width: 100%;
+}
+      /*  ===== end new product ======== */
+
 }
