@@ -1,0 +1,36 @@
+.overlay{
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.content{
+  text-align: center;
+  position: relative;
+  top: 25%;
+  margin-top: 4%;
+
+}
+.content li{
+  color: aliceblue;
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+.close{
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 60px;
+  color: aliceblue;
+  cursor: pointer;
+}
+span{
+  cursor: pointer;
+}
