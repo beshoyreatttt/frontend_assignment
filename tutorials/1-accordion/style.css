@@ -1,0 +1,25 @@
+.accord{
+    width: 80%;
+    margin: 5px auto;
+    background-color: #eee;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.accord::after{
+    content: '+';
+    float: right;
+    color: blue;
+}
+.active::after{
+    content: '-';
+    float: right;
+    color: blueviolet;
+}
+.desc{
+    width: 80%;
+    margin: auto;
+    padding-left: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
